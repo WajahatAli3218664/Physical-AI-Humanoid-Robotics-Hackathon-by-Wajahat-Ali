@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A Comprehensive Guide to Embodied AI',
-  favicon: 'img/favicon.ico',
+  favicon: '/robot.png',
 
   future: {
     v4: true,
