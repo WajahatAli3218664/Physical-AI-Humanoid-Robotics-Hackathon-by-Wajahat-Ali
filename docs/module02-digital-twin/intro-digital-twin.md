@@ -1,5 +1,5 @@
 ---
-id: module02-digital-twin-intro
+id: intro-digital-twin
 slug: module02-digital-twin/intro-digital-twin
 title: Module 2 – The Digital Twin (Gazebo & Unity)
 ---

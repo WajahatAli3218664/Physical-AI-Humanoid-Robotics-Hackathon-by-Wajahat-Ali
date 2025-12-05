@@ -1,5 +1,5 @@
 ---
-id: module04-vla-intro
+id: intro-vla
 slug: module04-vla-humanoid/intro-vla
 title: Module 4 – Vision-Language-Action + Autonomous Capstone
 ---

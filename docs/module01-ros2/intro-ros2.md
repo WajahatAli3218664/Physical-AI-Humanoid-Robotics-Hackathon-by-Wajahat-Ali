@@ -1,5 +1,5 @@
 ---
-id: module01-ros2-intro
+id: intro-ros2
 slug: module01-ros2/intro-ros2
 title: Module 1 – The Robotic Nervous System (ROS 2)
 ---
