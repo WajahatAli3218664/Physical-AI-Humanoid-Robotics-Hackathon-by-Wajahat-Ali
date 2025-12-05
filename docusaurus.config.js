@@ -113,11 +113,17 @@ const config = {
           {
             title: 'More',
             items: [
-              // 👇 Blog hata diya, sirf GitHub rakha
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/WajahatAli3218664',
               },
+            ],
+          },
+          {
+            title: 'Social',
+            items: [
+              { label: 'GitHub', href: 'https://github.com/WajahatAli3218664' },
+              { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
             ],
           },
         ],
