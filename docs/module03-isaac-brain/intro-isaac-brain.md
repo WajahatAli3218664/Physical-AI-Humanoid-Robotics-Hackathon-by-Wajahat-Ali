@@ -1,7 +1,7 @@
 ---
 id: intro-isaac-brain
-slug: module03-isaac-brain/intro-isaac-brain
 title: Module 3 – The AI-Robot Brain (NVIDIA Isaac)
+sidebar_position: 0
 ---
 
 # Module 3 – The AI-Robot Brain (NVIDIA Isaac)

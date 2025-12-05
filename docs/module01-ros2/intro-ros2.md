@@ -1,7 +1,7 @@
 ---
 id: intro-ros2
-slug: module01-ros2/intro-ros2
 title: Module 1 – The Robotic Nervous System (ROS 2)
+sidebar_position: 0
 ---
 
 # Module 1 – The Robotic Nervous System (ROS 2)
