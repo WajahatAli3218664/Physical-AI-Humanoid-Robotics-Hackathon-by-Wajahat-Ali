@@ -14,4 +14,3 @@ Use this page as an overview for:
 - Gazebo simulation for physics-accurate testing
 - Unity for high-fidelity visuals and ML pipelines
 - Links to all lessons in this module
-
