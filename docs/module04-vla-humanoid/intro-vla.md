@@ -14,4 +14,3 @@ Use this page as an overview for:
 - LLM + ROS 2 integration for humanoids
 - The final autonomous humanoid capstone project
 - Links to all chapters in this module
-
