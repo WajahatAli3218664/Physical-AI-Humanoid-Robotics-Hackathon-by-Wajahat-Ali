@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -6,8 +7,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-
+  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -15,59 +15,82 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-
-        <div className={styles.buttons}>
-
-          {/* MODULE 1 */}
+        <div className={styles.heroButtons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/module01-ros2/intro-ros2">
-            Module 1 — ROS 2: The Robotic Nervous System
+            Start with Module 1
           </Link>
-
-          {/* MODULE 2 */}
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/module02-digital-twin/intro-digital-twin">
-            Module 2 — The Digital Twin (Gazebo & Unity)
-          </Link>
-
-          {/* MODULE 3 */}
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/module03-isaac-brain/intro-isaac-brain">
-            Module 3 — The AI-Robot Brain (NVIDIA Isaac)
-          </Link>
-
-          {/* MODULE 4 */}
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/module04-vla-humanoid/intro-vla">
-            Module 4 — Vision-Language-Action + Capstone
-          </Link>
-
         </div>
       </div>
     </header>
   );
 }
 
-export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+const modules = [
+  {
+    id: 'module01',
+    title: 'Module 1: The Robotic Nervous System (ROS 2)',
+    description:
+      'Build the communication backbone of your humanoid using ROS 2 nodes, topics, services, and actions.',
+    to: '/docs/module01-ros2/intro-ros2',
+  },
+  {
+    id: 'module02',
+    title: 'Module 2: The Digital Twin (Gazebo & Unity)',
+    description:
+      'Create a precise digital twin of your humanoid and its world using Gazebo and Unity for simulation.',
+    to: '/docs/module02-digital-twin/intro-digital-twin',
+  },
+  {
+    id: 'module03',
+    title: 'Module 3: The AI-Robot Brain (NVIDIA Isaac)',
+    description:
+      'Use NVIDIA Isaac to give your humanoid high-fidelity perception, navigation, and manipulation capabilities.',
+    to: '/docs/module03-isaac-brain/intro-isaac-brain',
+  },
+  {
+    id: 'module04',
+    title: 'Module 4: Vision-Language-Action + Capstone',
+    description:
+      'Wire language models and vision into your robot to build a full VLA-driven autonomous humanoid.',
+    to: '/docs/module04-vla-humanoid/intro-vla',
+  },
+];
 
+function ModulesGrid() {
+  return (
+    <section className={styles.modulesSection}>
+      <div className="container">
+        <Heading as="h2" className={styles.sectionTitle}>
+          Explore the Book Modules
+        </Heading>
+        <div className={styles.modulesGrid}>
+          {modules.map((module) => (
+            <Link
+              key={module.id}
+              to={module.to}
+              className={clsx('card padding--lg', styles.moduleCard)}>
+              <h3>{module.title}</h3>
+              <p>{module.description}</p>
+              <span className={styles.moduleLink}>Read this module →</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
-      description="Physical AI & Humanoid Robotics Book">
+      description="Physical AI & Humanoid Robotics – a four-module journey from ROS 2 to full VLA-driven humanoids.">
       <HomepageHeader />
-
-      <main className="container margin-vert--lg">
-        <div style={{ textAlign: 'center', fontSize: '1.2rem', opacity: 0.85 }}>
-          <p>
-            Explore the full roadmap of humanoid robotics — sensors, digital twins, AI control,
-            and full autonomous skill pipelines.
-          </p>
-        </div>
+      <main>
+        <ModulesGrid />
       </main>
     </Layout>
   );
