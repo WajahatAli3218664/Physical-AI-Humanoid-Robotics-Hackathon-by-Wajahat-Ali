@@ -13,4 +13,3 @@ Use this page as an overview for:
 - ROS 2 concepts (nodes, topics, services, actions)
 - How ROS 2 acts as the “nervous system” of your humanoid
 - Links to the detailed lessons in this module
-
