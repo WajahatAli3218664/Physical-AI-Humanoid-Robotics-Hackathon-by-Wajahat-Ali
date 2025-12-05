@@ -14,4 +14,3 @@ Use this page as an overview for:
 - Isaac ROS for perception, navigation, and manipulation
 - How Isaac becomes the “brain” of your robot
 - Links to detailed chapters of this module
-
