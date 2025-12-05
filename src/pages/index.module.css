@@ -1,6 +1,6 @@
 /**
- * Enhanced Dark/Light Theme CSS with Purple/Pink Gradients
- * Optimized for both dark and light modes with improved footer & pills
+ * Clean Purple Theme CSS - Light & Beautiful
+ * Simple purple colors, no pink, white backgrounds
  */
 
 /* ========================================
@@ -11,27 +11,27 @@
   padding: 5rem 0 4rem;
   position: relative;
   overflow: hidden;
-  /* Dark mode: Purple to Dark gradient */
-  background: radial-gradient(circle at top left, #7c3aed 0%, #4c1d95 35%, #1e1b4b 100%);
+  /* Dark mode: Simple purple */
+  background: #7c3aed;
   color: #fff;
 }
 
 /* Light mode override */
 html[data-theme='light'] .heroBanner {
-  background: radial-gradient(circle at top left, #c084fc 0%, #a855f7 35%, #9333ea 100%);
-  color: #1e1b4b;
+  background: #9333ea;
+  color: #fff;
 }
 
 /* Hero Text Styling */
 .heroLead p { 
-  color: rgba(255,255,255,0.92); 
+  color: rgba(255,255,255,0.95); 
   margin-top: 1rem; 
   max-width: 52rem; 
   font-size: 1.05rem; 
 }
 
 html[data-theme='light'] .heroLead p {
-  color: rgba(30, 27, 75, 0.9);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .heroIllustration { 
@@ -53,7 +53,7 @@ html[data-theme='light'] .heroLead p {
    ======================================== */
 
 .statCard {
-  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), rgba(139, 92, 246, 0.05));
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 1rem;
   width: 220px;
@@ -61,26 +61,26 @@ html[data-theme='light'] .heroLead p {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  border: 1px solid rgba(167, 139, 250, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .statCard:hover {
   transform: translateY(-4px);
-  border-color: rgba(167, 139, 250, 0.5);
-  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 html[data-theme='light'] .statCard {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(250, 245, 255, 0.9));
-  border: 2px solid rgba(168, 85, 247, 0.3);
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.1);
+  background: #ffffff;
+  border: 2px solid #9333ea;
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.15);
 }
 
 html[data-theme='light'] .statCard:hover {
-  border-color: rgba(168, 85, 247, 0.6);
-  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.25);
+  border-color: #7c3aed;
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.25);
 }
 
 .statCard h4 { 
@@ -97,7 +97,7 @@ html[data-theme='light'] .statCard h4 {
 
 .statCard p { 
   margin: 0; 
-  color: #e9d5ff; 
+  color: rgba(255, 255, 255, 0.9); 
   font-size: 0.9rem; 
   flex: 1; 
 }
@@ -112,7 +112,7 @@ html[data-theme='light'] .statCard p {
   margin-top: 0.4rem; 
   padding: 0.5rem 0.9rem; 
   border-radius: 8px; 
-  background: linear-gradient(90deg, #a855f7, #ec4899);
+  background: #a855f7;
   color: #fff; 
   text-decoration: none; 
   font-weight: 600;
@@ -121,18 +121,18 @@ html[data-theme='light'] .statCard p {
 }
 
 .statAction:hover {
-  background: linear-gradient(90deg, #9333ea, #db2777);
+  background: #9333ea;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
 }
 
 html[data-theme='light'] .statAction {
-  background: linear-gradient(90deg, #9333ea, #db2777);
-  box-shadow: 0 2px 8px rgba(147, 51, 234, 0.3);
+  background: #a855f7;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
 }
 
 html[data-theme='light'] .statAction:hover {
-  background: linear-gradient(90deg, #7c3aed, #be185d);
+  background: #9333ea;
   box-shadow: 0 4px 16px rgba(147, 51, 234, 0.4);
 }
 
@@ -141,19 +141,19 @@ html[data-theme='light'] .statAction:hover {
    ======================================== */
 
 .heroCard {
-  background: rgba(30, 27, 75, 0.92);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 1.25rem;
-  border: 1px solid rgba(167, 139, 250, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 html[data-theme='light'] .heroCard {
-  background: rgba(250, 245, 255, 0.95);
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  background: #ffffff;
+  border: 1px solid rgba(147, 51, 234, 0.3);
 }
 
 .heroCTAs .button--primary {
-  background: linear-gradient(90deg, #16a34a, #15803d) !important;
+  background: #16a34a !important;
   border: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -161,44 +161,44 @@ html[data-theme='light'] .heroCard {
 }
 
 .heroCTAs .button--primary:hover {
-  background: linear-gradient(90deg, #15803d, #14532d) !important;
+  background: #15803d !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
 }
 
 html[data-theme='light'] .heroCTAs .button--primary {
-  background: linear-gradient(90deg, #16a34a, #15803d) !important;
+  background: #16a34a !important;
   box-shadow: 0 4px 12px rgba(22, 163, 74, 0.4);
 }
 
 html[data-theme='light'] .heroCTAs .button--primary:hover {
-  background: linear-gradient(90deg, #15803d, #14532d) !important;
+  background: #15803d !important;
   box-shadow: 0 6px 20px rgba(22, 163, 74, 0.5);
 }
 
 .heroCTAs .button--secondary {
   background: transparent !important;
   color: #fff !important;
-  border: 2px solid rgba(233, 213, 255, 0.5) !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .heroCTAs .button--secondary:hover {
-  border-color: rgba(233, 213, 255, 0.8) !important;
-  background: rgba(233, 213, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   transform: translateY(-2px);
 }
 
 html[data-theme='light'] .heroCTAs .button--secondary {
   color: #6b21a8 !important;
-  border: 2px solid rgba(107, 33, 168, 0.6) !important;
-  background: rgba(255, 255, 255, 0.8) !important;
+  border: 2px solid #6b21a8 !important;
+  background: #ffffff !important;
 }
 
 html[data-theme='light'] .heroCTAs .button--secondary:hover {
-  border-color: rgba(107, 33, 168, 0.9) !important;
-  background: rgba(243, 232, 255, 0.9) !important;
+  border-color: #7c3aed !important;
+  background: #faf5ff !important;
 }
 
 .heroMeta { 
@@ -213,9 +213,9 @@ html[data-theme='light'] .heroCTAs .button--secondary:hover {
   font-size: 0.85rem;
   padding: 0.4rem 0.85rem;
   border-radius: 999px;
-  border: 2px solid rgba(233, 213, 255, 0.4);
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(139, 92, 246, 0.15));
-  color: #e9d5ff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
@@ -223,13 +223,13 @@ html[data-theme='light'] .heroCTAs .button--secondary:hover {
 }
 
 .pill:hover {
-  border-color: rgba(233, 213, 255, 0.6);
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(139, 92, 246, 0.25));
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
 }
 
 html[data-theme='light'] .pill {
-  border: 2px solid rgba(147, 51, 234, 0.3);
+  border: 2px solid #9333ea;
   background: transparent;
   color: #6b21a8;
   font-weight: 700;
@@ -237,8 +237,8 @@ html[data-theme='light'] .pill {
 }
 
 html[data-theme='light'] .pill:hover {
-  border-color: rgba(147, 51, 234, 0.6);
-  background: rgba(216, 180, 254, 0.15);
+  border-color: #7c3aed;
+  background: rgba(243, 232, 255, 0.5);
   box-shadow: none;
 }
 
@@ -249,7 +249,7 @@ html[data-theme='light'] .pill:hover {
 .heroGlow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top, rgba(167, 139, 250, 0.15), transparent 60%);
+  background: transparent;
   pointer-events: none;
 }
 
@@ -277,7 +277,7 @@ html[data-theme='light'] .pill:hover {
 }
 
 html[data-theme='light'] .heroTitle {
-  color: #1e1b4b;
+  color: #fff;
   font-weight: 800;
 }
 
@@ -285,12 +285,12 @@ html[data-theme='light'] .heroTitle {
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 36rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 1.75rem;
 }
 
 html[data-theme='light'] .heroSubtitle {
-  color: rgba(30, 27, 75, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   font-weight: 500;
 }
 
@@ -306,15 +306,15 @@ html[data-theme='light'] .heroSubtitle {
 }
 
 .secondaryCta {
-  border: 2px solid rgba(233, 213, 255, 0.5) !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
   background: transparent !important;
   color: #fff !important;
 }
 
 html[data-theme='light'] .secondaryCta {
-  border: 2px solid rgba(107, 33, 168, 0.6) !important;
+  border: 2px solid #6b21a8 !important;
   color: #6b21a8 !important;
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: #ffffff !important;
 }
 
 .heroMeta {
@@ -336,12 +336,12 @@ html[data-theme='light'] .secondaryCta {
 
 .section {
   padding: 4rem 0 3rem;
-  background: #0f0a1e;
+  background: #1e1b4b;
   color: #f5f5f5;
 }
 
 html[data-theme='light'] .section {
-  background: #faf5ff;
+  background: #ffffff;
   color: #1e1b4b;
 }
 
@@ -375,11 +375,11 @@ html[data-theme='light'] .sectionSubtitle {
 
 .modulesSection {
   padding: 4rem 0;
-  background: #0f0a1e;
+  background: #1e1b4b;
 }
 
 html[data-theme='light'] .modulesSection {
-  background: linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%);
+  background: #faf5ff;
 }
 
 .modulesGrid {
@@ -389,11 +389,11 @@ html[data-theme='light'] .modulesSection {
 }
 
 .moduleCard {
-  background: linear-gradient(145deg, #1e1b4b, #0f0a1e);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 1.25rem;
   padding: 1.6rem 1.4rem;
   border: 1px solid rgba(167, 139, 250, 0.3);
-  box-shadow: 0 14px 35px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -401,20 +401,20 @@ html[data-theme='light'] .modulesSection {
 }
 
 html[data-theme='light'] .moduleCard {
-  background: linear-gradient(145deg, #ffffff, #faf5ff);
-  border: 2px solid rgba(168, 85, 247, 0.35);
-  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.15);
+  background: #ffffff;
+  border: 2px solid #c084fc;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.15);
 }
 
 .moduleCard:hover { 
   transform: translateY(-6px) scale(1.01); 
-  box-shadow: 0 28px 60px rgba(124, 58, 237, 0.4); 
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.25); 
   border-color: rgba(167, 139, 250, 0.6); 
 }
 
 html[data-theme='light'] .moduleCard:hover {
-  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
-  border-color: rgba(168, 85, 247, 0.7);
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.25);
+  border-color: #a855f7;
 }
 
 .moduleIcon {
@@ -424,13 +424,13 @@ html[data-theme='light'] .moduleCard:hover {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(139, 92, 246, 0.1));
+  background: rgba(167, 139, 250, 0.15);
   margin-bottom: 0.6rem;
   color: #a855f7;
 }
 
 html[data-theme='light'] .moduleIcon {
-  background: linear-gradient(135deg, rgba(216, 180, 254, 0.6), rgba(192, 132, 252, 0.4));
+  background: rgba(216, 180, 254, 0.3);
   color: #7c3aed;
 }
 
@@ -457,24 +457,24 @@ html[data-theme='light'] .moduleBody p {
 
 .moduleLink {
   font-size: 0.9rem;
-  color: #ec4899;
+  color: #c084fc;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .moduleLink:hover {
-  color: #f472b6;
+  color: #e9d5ff;
   text-decoration: underline;
 }
 
 html[data-theme='light'] .moduleLink {
-  color: #db2777;
+  color: #7c3aed;
   font-weight: 600;
 }
 
 html[data-theme='light'] .moduleLink:hover {
-  color: #ec4899;
+  color: #9333ea;
 }
 
 /* ========================================
@@ -483,7 +483,7 @@ html[data-theme='light'] .moduleLink:hover {
 
 .featuresSection {
   padding: 3.5rem 0 4rem;
-  background: #0a0515;
+  background: #0f0a1e;
 }
 
 html[data-theme='light'] .featuresSection {
@@ -498,7 +498,7 @@ html[data-theme='light'] .featuresSection {
 }
 
 .featureCard {
-  background: linear-gradient(180deg, #1e1b4b, #0f0a1e);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 1.25rem;
   border: 1px solid rgba(167, 139, 250, 0.2);
@@ -506,20 +506,20 @@ html[data-theme='light'] .featuresSection {
 }
 
 html[data-theme='light'] .featureCard {
-  background: linear-gradient(180deg, #ffffff, #faf5ff);
-  border: 2px solid rgba(168, 85, 247, 0.3);
+  background: #ffffff;
+  border: 2px solid #c084fc;
   box-shadow: 0 4px 12px rgba(168, 85, 247, 0.1);
 }
 
 .featureCard:hover {
   border-color: rgba(167, 139, 250, 0.5);
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
 }
 
 html[data-theme='light'] .featureCard:hover {
-  border-color: rgba(168, 85, 247, 0.6);
-  box-shadow: 0 12px 24px rgba(168, 85, 247, 0.25);
+  border-color: #a855f7;
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.25);
 }
 
 .featureCard h3 { 
@@ -547,12 +547,12 @@ html[data-theme='light'] .featureCard p {
 
 .ctaSection {
   padding: 3.5rem 0 4rem;
-  background: linear-gradient(180deg, rgba(30, 27, 75, 0.5), transparent 40%);
+  background: rgba(30, 27, 75, 0.5);
   text-align: center;
 }
 
 html[data-theme='light'] .ctaSection {
-  background: linear-gradient(180deg, rgba(243, 232, 255, 0.8), rgba(250, 245, 255, 0.4));
+  background: #f3e8ff;
   padding: 4rem 0 4.5rem;
 }
 
@@ -584,7 +584,7 @@ html[data-theme='light'] .ctaSection p {
 }
 
 .ctaRow .button--primary {
-  background: linear-gradient(90deg, #16a34a, #15803d) !important;
+  background: #16a34a !important;
   border: none;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -594,7 +594,7 @@ html[data-theme='light'] .ctaSection p {
 }
 
 .ctaRow .button--primary:hover {
-  background: linear-gradient(90deg, #15803d, #14532d) !important;
+  background: #15803d !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
 }
@@ -625,13 +625,13 @@ html[data-theme='light'] .ctaRow .button--primary:hover {
 
 html[data-theme='light'] .ctaRow .button--secondary {
   color: #6b21a8 !important;
-  border: 2px solid rgba(107, 33, 168, 0.6) !important;
-  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid #6b21a8 !important;
+  background: #ffffff !important;
 }
 
 html[data-theme='light'] .ctaRow .button--secondary:hover {
-  border-color: rgba(107, 33, 168, 0.9) !important;
-  background: rgba(243, 232, 255, 0.95) !important;
+  border-color: #7c3aed !important;
+  background: #faf5ff !important;
 }
 
 /* ========================================
@@ -665,22 +665,18 @@ html[data-theme='light'] .ctaRow .button--secondary:hover {
 }
 
 /* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
-
-/* ========================================
    FOOTER STYLING - Enhanced & Beautiful
    ======================================== */
 
 /* Footer Container */
 .footer {
-  background: linear-gradient(180deg, #1e1b4b 0%, #0f0a1e 100%) !important;
+  background: #1e1b4b !important;
   padding: 3rem 0 1.5rem !important;
   border-top: 2px solid rgba(167, 139, 250, 0.2);
 }
 
 html[data-theme='light'] .footer {
-  background: linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%) !important;
+  background: #faf5ff !important;
   border-top: 2px solid rgba(168, 85, 247, 0.25);
 }
 
@@ -715,7 +711,7 @@ html[data-theme='light'] .footer__title {
 }
 
 .footer__link-item:hover {
-  color: #ec4899 !important;
+  color: #a855f7 !important;
   text-decoration: none !important;
   transform: translateX(4px);
 }
@@ -726,7 +722,7 @@ html[data-theme='light'] .footer__link-item {
 }
 
 html[data-theme='light'] .footer__link-item:hover {
-  color: #db2777 !important;
+  color: #9333ea !important;
 }
 
 /* Footer Copyright Section */
